@@ -16,6 +16,7 @@ nav {
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     padding: 35px;
+    border-radius: 10px;
 
 }
 
@@ -31,7 +32,8 @@ nav .img-content {
     align-items: center;
 
 }
-.img-i{
+
+.img-i {
     height: 50px;
 }
 
@@ -73,29 +75,134 @@ nav li a {
     color: #FF42A5;
 }
 
+/* banner related style */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+.banner-content{
+    background-color: rgba(140, 87, 238, 0.03);
+    width: 100%;
+    padding: 125px;
+}
+.contain{
+    text-align: center;
+}
+
+.ban-fh {
+    color: #0B0223;
+    text-align: left;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.goat {
+    text-align: left;
+    font-size: 95px;
+    font-weight: 700;
+    color: #a70dcec9;
+    margin-top: 0%;
+    margin-bottom: 10px;
+}
+
+.first-one {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+#btn{
+    margin-top: 20px;
+}
+.btn1 {
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background-color: #FF42A5;
+    color: #FFFFFF;
+    border: 0;
+    margin-right: 10px;
+}
+.btn2{
+padding: 15px 30px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 48px;
+background: #4EC5F7;
+color: #FFFFFF;
+border: 0;
+}
+.fdes{
+ color: #534C64;
+text-align: center;
+font-size: 15px;
+font-weight: 500;
+}
+
 
 /* responsive styles */
 /* smartphone */
 
 @media screen and (max-width:576px) {
-    nav, .img-content, .btn-a, ul{
+
+    nav,
+    .img-content,
+    .btn-a,
+    ul {
         flex-direction: column;
-        padding: 5px ;
+        padding: 5px;
     }
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 100px;
+    }
+    .ban-fh{
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .goat{
+        font-size: 75px;
+        font-weight: 700;
+    }
+
     .nav-title {
         text-align: center;
         font-size: 1.2em;
         font-weight: 600;
         margin-bottom: 0px;
     }
-    
+
 }
 
 /* medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    nav, .img-content, .btn-a, ul{
+
+    nav,
+    .img-content,
+    .btn-a,
+    ul {
         flex-direction: column;
-        padding: 5px ;
+        padding: 5px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 150px;
+    }
+    .ban-fh{
+        font-size: 40px;
+        font-weight: 500;
+        text-align: left;
+    }
+    .goat{
+        font-size: 80px;
+    font-weight: 700;
+    text-align: left;
     }
     .nav-title {
         text-align: center;
