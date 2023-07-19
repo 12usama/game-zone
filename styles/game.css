@@ -483,6 +483,9 @@ nav li a {
         font-weight: 600;
         margin-bottom: 0px;
     }
+    .btn-a ul li{
+        text-align: center ;
+    }
 
     .gamer-head,
     .gamer-des,
@@ -524,11 +527,22 @@ nav li a {
     }
 
     .diff-game {
-        width: 576px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .fimage-content{
         display: flex;
-        justify-content: space-evenly;
+        gap: 30px;
+    }
+    .footer-cont{
+        display: flex;
         flex-wrap: wrap;
-        padding: 5px;
+        gap: 10px;
+    }
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
     }
 }
 
@@ -593,12 +607,18 @@ nav li a {
     .btng {
         justify-content: center;
     }
-
-    .diff-game {
-        width: 576px;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding: 150px;
+    .btn-a ul li{
+        text-align: center ;
     }
-}
+    
+        
+    .diff-game {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-cont{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    }
