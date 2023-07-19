@@ -1,0 +1,106 @@
+/* font styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheethttps://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet');
+
+/* shared style */
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* header styles */
+/* nav styles */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 35px;
+
+}
+
+.nav-title {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+nav .img-content {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+.img-i{
+    height: 50px;
+}
+
+.btn-a {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 500
+}
+
+nav li a {
+    text-decoration: none;
+    color: #3C354F;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.btn-pri {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    border: 0;
+}
+
+.g {
+    color: #FF42A5;
+}
+
+
+/* responsive styles */
+/* smartphone */
+
+@media screen and (max-width:576px) {
+    nav, .img-content, .btn-a, ul{
+        flex-direction: column;
+        padding: 5px ;
+    }
+    .nav-title {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+    
+}
+
+/* medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav, .img-content, .btn-a, ul{
+        flex-direction: column;
+        padding: 5px ;
+    }
+    .nav-title {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+}
